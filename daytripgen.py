@@ -8,7 +8,7 @@ transportations = ['Car', 'Bus', 'Train', 'Plane', 'Boat']
 
 import random
 
-destination = random.choice(destinations)
+destination = random.choice(destinations) #Not sure if this was right but this was the only way I got my last function to work
 
 restaurant = random.choice(restaurants)
 
@@ -17,9 +17,9 @@ entertainment = random.choice(entertainments)
 transportation = random.choice(transportations)
 
 def des_gen ():
-    destination = random.choice(destinations)
-    print(destination)
-
+    diestination = random.choice(destinations)
+    print(f"Destination: {destination}")
+    
 def res_gen ():
     restaurant = random.choice(restaurants)
     print(restaurant)
@@ -35,7 +35,7 @@ def tran_gen ():
 def user_satisfaction ():
     print("Are you satisfied with your selection? Y or N ")
     result = input("")
-    if result == "Yes":
+    if result == "Y":
         print("Congratulations!!! Your trip has been scheduled.")
         print(f"Destination: {destination}")
         print(f"Restaurant: {restaurant}")
